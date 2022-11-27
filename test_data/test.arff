@@ -1,13 +1,328 @@
 @RELATION test 
 
-@ATTRIBUTE sepallength	REAL
-@ATTRIBUTE sepalwidth 	REAL
-@ATTRIBUTE petallength 	REAL
-@ATTRIBUTE petalwidth	REAL
-@ATTRIBUTE class 	{Iris-setosa,Iris-versicolor,Iris-virginica}
+@ATTRIBUTE Nombre String
+@ATTRIBUTE Partidos numeric
+@ATTRIBUTE Minutos_jugados numeric
+@ATTRIBUTE Goles numeric
+@ATTRIBUTE Tiros numeric	
+@ATTRIBUTE Amarillas numeric	
+@ATTRIBUTE Rojas numeric	
+@ATTRIBUTE Precision_Pases numeric
+
 
 @DATA
-5.8,2.7,3.9,1.2,?
-%
-%
-%
+
+'Abde Ezzalzouli ',8,313,0,10,1,0,0,7
+'Abdon Prats ',10,136,0,5,0,0,0,76
+'Alexander Isak ',2,152,1,3,0,0,0,64
+'Alexander Sörloth ',10,820,4,24,1,0,0,69
+'Amath Ndiaye ',7,243,1,7,0,0,0,77
+'Ander Barrenetxea ',4,62,0,1,1,0,0,7
+'Ansu Fati ',14,468,3,29,0,0,0,86
+'Ante Budimir ',11,554,1,19,1,0,0,62
+'Antoine Griezmann ',14,773,5,26,0,0,0,84
+'Arnaut Danjuma ',9,476,2,8,0,0,0,73
+'Arvin Appiah ',0,0,0,0,0,0,0
+'Asier Villalibre ',4,92,0,4,0,0,0,54
+'Awer Mabil ',5,165,0,3,0,0,0,73
+'Bebé ',4,60,0,4,1,0,0,84
+'Borja Iglesias ',13,957,8,30,0,1,0,73
+'Borja Mayoral ',14,1106,1,17,2,0,0,76
+'Carles Pérez ',14,600,0,12,1,0,0,9
+'Carlos Fernández ',7,232,0,7,1,0,0,7
+'Chimy Ávila ',13,838,6,30,3,1,0,6
+'Choco Lozano ',12,756,0,13,2,0,0,68
+'Christian Stuani ',10,419,4,13,2,0,0,79
+'Dani Gómez ',6,66,0,0,2,0,0,8
+'Diego López ',1,10,0,0,0,0,1
+'Dyego Sousa ',10,306,0,8,1,0,0,69
+'Eden Hazard ',3,99,0,2,0,0,0,9
+'Edinson Cavani ',7,430,4,14,0,0,0,76
+'El Bilal Touré ',8,568,3,12,0,0,0,65
+'Enes Ünal ',14,1216,4,31,3,0,0,64
+'Ezequiel Ponce ',13,510,2,12,2,0,0,73
+'Ferrán Torres ',13,569,2,26,3,0,0,82
+'Fran López ',0,0,0,0,0,0,0
+'Gerard Moreno ',6,382,2,14,1,0,0,7
+'Gonzalo Plata ',10,592,0,11,0,0,0,79
+'Gonçalo Paciência ',10,335,1,15,1,1,0,58
+'Gorka Guruzeta ',7,203,5,13,1,0,0,8
+'Hugo Duro ',10,391,1,11,0,0,0,74
+'Iago Aspas ',14,1122,7,28,1,0,0,8
+'Iván Romero ',1,11,0,0,1,0,0,33
+'Iñaki Williams ',14,1142,5,34,0,0,0,7
+'Jaime Mata ',6,41,0,1,2,0,0,69
+'Javi Puado ',13,749,1,20,0,0,0,84
+'Jon Karrikaburu ',6,92,0,5,1,0,0,65
+'Joselu S. Mato ',14,1260,7,39,1,0,0,61
+'José Luis Morales ',13,424,1,12,0,0,0,63
+'João Félix ',12,513,2,19,5,0,0,76
+'Juan Miguel Latasa ',6,57,0,5,0,0,0,7
+'Juanmi Jiménez ',4,313,2,7,2,0,0,9
+'Justin Kluivert ',10,519,2,12,1,0,0,81
+'Jörgen Strand Larsen ',10,690,0,16,3,0,0,69
+'Karim Benzema ',7,627,5,34,0,0,0,86
+'Kasper Dolberg ',4,197,0,2,0,0,0,7
+'Kike García ',14,428,2,19,3,0,0,73
+'Largie Ramazani ',14,800,2,23,4,0,0,69
+'Lazaro Vinicius ',6,206,1,2,0,0,0,83
+'Leo Baptistâo ',11,563,2,15,3,0,0,69
+'Loren Morón ',2,15,0,0,1,0,0,75
+'Luca Koleosho ',2,24,0,0,0,0,0,58
+'Lucas Boyé ',12,761,1,10,2,1,0,81
+'Lucas Pérez ',13,593,2,15,3,0,0,84
+'Luiz Henrique ',12,741,0,16,1,0,0,76
+'Malcom Adu Ares ',1,5,0,1,0,0,1
+'Manu Vallejo ',7,206,0,1,0,0,0,81
+'Marco Asensio ',9,186,1,8,0,0,0,97
+'Marcos André ',11,375,1,15,1,1,0,64
+'Mariano Díaz ',4,24,0,1,0,0,0,57
+'Marko Milovanovic ',2,14,0,1,1,0,0,38
+'Martin Braithwaite ',9,701,3,17,2,1,0,64
+'Matheus Cunha ',11,377,0,12,2,0,0,78
+'Maxi Gómez ',3,108,0,3,0,0,0,62
+'Memphis Depay ',2,114,1,6,0,0,0,84
+'Miguel Rodríguez ',0,0,0,0,0,0,0
+'Mohamed-Ali Cho ',7,244,0,9,1,0,0,83
+'Moi Parra ',1,10,0,0,0,0,1
+'Munir El Haddadi ',8,234,1,7,2,0,0,69
+'Nabil Fekir ',8,430,1,11,4,1,0,85
+'Nabil Touaizi ',1,3,0,0,0,0,1
+'Nicolas Jackson ',13,772,2,16,1,0,0,73
+'Ousmane Dembélé ',14,866,4,31,3,0,0,84
+'Pau Víctor ',0,0,0,0,0,0,0
+'Pere Milla ',13,808,3,11,3,0,0,76
+'Pierre-Emerick Aubameyang ',1,9,0,1,0,0,1
+'Radamel Falcao ',12,404,2,13,2,0,0,73
+'Rafa Mir ',9,559,2,25,1,0,0,72
+'Raphinha ',13,571,2,26,1,0,0,8
+'Raúl García ',13,355,1,23,1,0,0,67
+'Robert Lewandowski ',14,1064,13,51,2,1,0,8
+'Roberto Arroyo ',1,15,0,0,0,0,0
+'Rodrygo Goes ',12,912,4,40,1,0,0,88
+'Roger Martí ',8,430,0,4,1,0,0,76
+'Rubén Sobrino ',11,799,1,13,3,0,0,77
+'Samuel Lino ',14,1215,2,38,3,0,0,83
+'Sergi Guardiola ',11,377,0,10,0,0,0,64
+'Sergio Camello ',14,934,2,29,0,0,0,81
+'Sergio León ',13,625,5,16,0,0,0,69
+'Shon Weissman ',11,561,1,14,1,0,0,77
+'Taty Castellanos ',14,1114,3,29,4,0,0,68
+'Tino Kadewere ',0,0,0,0,0,0,0
+'Umar Sadiq ',5,322,3,8,1,0,0,74
+'Vedat Muriqi ',12,1038,8,36,3,1,0,61
+'Vinicius Junior ',14,1227,6,36,3,0,0,82
+'Willian José ',10,268,0,8,0,0,0,83
+'Youssef En Nesyri ',10,362,0,16,0,0,0,57
+'Yéremi Pino ',13,697,1,13,2,0,0,81
+'Álvaro Giménez ',1,17,0,0,0,0,1
+'Álvaro Morata ',14,845,5,30,3,0,0,62
+'Álvaro Negredo ',10,410,1,6,0,0,0,58
+'Ángel Correa ',14,513,3,20,1,0,0,84
+'Ángel Rodríguez ',5,149,0,6,0,0,0,7
+'Óscar Ureña ',3,100,0,1,0,0,0,83
+'Alvaro Rodríguez ',0,0,0,0,0,0,0
+'Luis Bilbao ',0,0,0,0,0,0,0
+'Pablo Durán ',3,29,0,0,0,0,0,71
+'Sekou Gassama ',1,36,0,2,0,0,0,78
+' Diego Méndez ',0,0,0,0,0,0,0
+'Adnan Januzaj ',2,47,0,0,0,0,0,68
+'Adrián Embarba ',10,458,1,13,4,1,0,74
+'Aimar Oroz ',12,775,2,9,3,0,0,8
+'Aitor Ruibal ',13,563,0,7,1,0,0,78
+'Alberto Moreno ',0,0,0,0,0,0,0
+'Aleix García ',14,1246,0,21,1,0,0,9
+'Ander Guevara ',4,126,0,1,1,0,0,91
+'Ander Herrera ',6,239,0,3,2,1,0,92
+'Ander Martín ',0,0,0,0,0,0,0
+'André Almeida ',11,706,2,8,0,0,0,86
+'Andrés Guardado ',8,303,0,1,2,0,0,83
+'Antonio Blanco ',3,158,0,0,0,0,0,93
+'Antonio Sánchez ',14,580,0,9,4,0,0,81
+'Anuar Mohamed ',3,210,1,3,1,0,0,78
+'Arnau Puigmal ',7,241,0,4,3,0,0,75
+'Asier Illarramendi ',6,153,1,2,2,0,0,8
+'Augusto Solari ',6,187,0,1,0,0,0,84
+'Aurélien Tchouaméni ',12,900,0,14,1,0,0,93
+'Axel Witsel ',14,1067,0,6,2,0,0,94
+'Beñat Turrientes ',6,106,0,0,0,0,0,9
+'Brais Méndez ',14,1121,6,30,4,0,0,84
+'Brian Ocampo ',10,561,0,5,1,0,0,77
+'Carles Aleñá ',13,1026,2,13,6,0,0,81
+'Carlo Adriano ',0,0,0,0,0,0,0
+'Carlos Casemiro ',1,8,0,0,0,0,0,88
+'Carlos Rojas ',0,0,0,0,0,0,0
+'Carlos Soler ',3,242,1,5,0,0,0,84
+'Clément Grenier ',10,402,0,2,6,0,0,81
+'Cristian Portu ',11,391,0,6,2,1,0,79
+'Curro Muñoz ',0,0,0,0,0,0,0
+'Curro Sánchez ',2,43,0,1,1,0,0,77
+'César de la Hoz ',8,583,1,3,4,0,0,83
+'Dani Ceballos ',8,178,0,3,1,0,0,93
+'Dani García ',8,364,0,1,1,0,0,82
+'Dani Parejo ',14,1227,0,11,2,0,0,89
+'Dani Rodríguez ',13,685,0,7,5,0,0,82
+'Daniel Villahermosa ',0,0,0,0,0,0,0
+'Darko Brasanac ',12,484,1,5,3,0,0,83
+'David Silva ',12,816,0,12,2,0,0,86
+'Domingos Quina ',9,268,0,5,1,0,0,84
+'Edu Expósito ',13,772,2,11,0,0,0,77
+'Eduardo Camavinga ',14,511,0,8,1,0,0,91
+'Etta Eyong ',0,0,0,0,0,0,0
+'Fede San Emeterio ',13,790,0,3,4,0,0,82
+'Federico Valverde ',14,1108,6,31,1,0,0,9
+'Fernando Reges ',6,495,0,0,2,0,0,89
+'Fidel Chaves ',4,165,0,1,1,0,0,71
+'Fran Beltrán ',14,1123,0,12,1,0,0,92
+'Fran Pérez ',2,21,0,0,1,0,0,92
+'Francis Coquelin ',11,523,1,4,2,0,0,87
+'Francisco Portillo ',10,201,0,0,0,0,0,82
+'Franck Kessié ',7,216,0,6,3,0,0,88
+'Franco Cervi ',13,1024,0,14,0,1,0,77
+'Frenkie de Jong ',13,900,2,13,0,0,0,91
+'Gabriel Veiga ',13,576,3,15,2,1,0,8
+'Geoffrey Kondogbia ',11,719,0,8,3,0,0,9
+'Gerard Gumbau ',13,832,0,8,5,0,0,83
+'Giovani Lo Celso ',8,521,1,13,1,0,0,85
+'Gonzalo Melero ',8,536,1,6,2,0,0,89
+'Guido Rodríguez ',12,1043,0,8,2,0,0,89
+'Guilherme Guedes ',0,0,0,0,0,0,0
+'Hugo Guillamón ',13,916,1,3,4,0,0,85
+'Iddrisu Baba ',11,549,0,1,2,0,0,85
+'Iker Benito ',0,0,0,0,0,0,0
+'Iker Muniain ',11,788,0,18,1,0,0,88
+'Ilaix Moriba ',6,331,0,8,3,1,0,83
+'Isco Alarcón ',12,799,0,4,5,0,0,87
+'Isi Palazón ',13,988,3,30,1,0,0,85
+'Ivan Rakitic ',11,480,0,8,1,1,0,82
+'Iván Alejo ',12,659,0,8,5,0,0,7
+'Iván Martín ',2,103,2,2,0,0,0,79
+'Iván Sánchez ',11,555,0,9,0,0,0,84
+'Iñigo Eguaras ',11,495,1,4,2,0,0,85
+'Jaime Seoane ',9,269,0,1,0,0,0,81
+'Javi Llabrés ',1,17,0,0,0,0,1
+'Javi Martínez ',0,0,0,0,0,0,0
+'Javier Pastore ',1,5,0,0,0,0,0,86
+'Joan Jordan ',10,684,0,5,2,0,0,86
+'Joaquín Sánchez ',5,160,0,3,0,0,0,89
+'Joel Roca ',2,12,0,0,0,0,0,64
+'John Patrick Finn ',0,0,0,0,0,0,0
+'Jon Ander Olasagasti ',0,0,0,0,0,0,0
+'Jon Moncayola ',14,875,0,17,2,0,0,85
+'Jon Morcillo ',8,53,0,0,0,0,0,84
+'Josan Ferrández ',12,392,1,2,3,0,0,81
+'José Alonso Lara ',0,0,0,0,0,0,0
+'José Carlos Lazo ',8,137,1,6,0,0,0,79
+'José Mari ',10,286,0,2,1,0,0,81
+'José Ángel Pozo ',6,75,0,1,0,0,0,81
+'Juanjo Narváez ',5,147,0,3,0,0,0,74
+'Kang-In Lee ',14,1094,2,20,4,0,0,83
+'Keidi Bare ',11,330,0,4,0,0,0,85
+'Kenedy ',1,15,0,1,0,0,1
+'Kike Barja ',7,286,1,2,0,0,0,83
+'Kike Pérez ',13,966,0,17,2,0,0,8
+'Koba Koindredi ',0,0,0,0,0,0,0
+'Koke Resurrección ',10,742,0,3,2,0,0,85
+'Lago Júnior ',5,52,0,2,0,0,0,76
+'Luca de la Torre ',5,54,0,0,0,0,0,93
+' Lucas Ocampos ',3,132,0,0,1,0,0,84
+'Lucas Robertone ',14,1017,1,15,3,0,0,84
+'Lucas Torró ',14,1122,0,14,5,0,0,82
+'Lucas Vázquez ',8,368,2,7,1,0,0,9
+'Luis Milla ',8,651,0,4,2,1,0,82
+'Luka Modric ',13,926,3,18,3,0,0,91
+'Mamady Diarra ',2,66,0,3,0,0,0,89
+'Manu Trigueros ',6,250,0,2,1,0,0,9
+'Manuel Morlanes ',3,145,0,0,0,1,0,78
+'Marcos Llorente ',8,662,1,8,1,0,0,86
+'Mario Suárez ',1,6,0,0,0,0,0,67
+'Martin Svidersky ',0,0,0,0,0,0,0
+'Martín Zubimendi ',14,1151,1,5,4,0,0,85
+'Mauro Arambarri ',6,516,0,5,2,1,0,91
+'Mickaël Malsa ',4,39,0,0,0,0,0,5
+'Miguel Baeza ',0,0,0,0,0,0,0
+'Miguel Llabrés ',0,0,0,0,0,0,0
+'Mikel Merino ',14,1124,1,24,5,0,0,77
+'Mikel Vesga ',13,925,2,12,2,0,0,82
+'Miralem Pjanic ',0,0,0,0,0,0,0
+'Moi Gómez ',14,1139,1,11,2,0,0,87
+'Monchu Rodríguez ',12,659,1,9,4,0,0,82
+'Nemanja Gudelj ',12,1035,2,17,4,0,0,92
+'Nemanja Maksimovic ',12,711,0,4,0,0,0,83
+'Nico González ',12,517,1,9,1,0,0,91
+'Nico Melamed ',9,178,0,3,2,0,0,85
+'Nico Williams ',14,1071,3,24,0,0,0,79
+'Oier Zarraga ',9,224,0,7,1,0,0,88
+'Oihan Sancet ',14,938,3,17,2,0,0,87
+'Omar Mascarell ',12,1014,0,2,3,0,0,86
+'Oriol Romeu ',11,990,1,11,4,0,0,88
+'Pablo Gavi ',14,803,0,5,2,0,0,92
+'Pablo Ibáñez ',4,35,0,2,0,0,0,72
+'Pablo Muñoz ',2,11,0,0,0,0,1
+'Pablo Torre ',1,14,0,0,0,0,0,67
+'Papu Gómez ',12,655,0,15,4,0,0,91
+'Pathé Ciss ',13,643,1,10,3,0,0,86
+'Paul Akouokou ',6,238,0,2,2,0,0,92
+'Pedri González ',14,1025,3,10,0,0,0,91
+'Pol Lozano ',4,17,0,0,1,0,0,71
+'Ramón Terrats ',6,140,0,3,0,0,0,77
+'Randy Nteka ',7,71,0,2,0,1,0,76
+'Raúl Guti ',11,618,0,5,1,0,0,86
+'Reinier Jesus ',7,313,1,4,1,0,0,81
+'Renato Tapia ',11,638,0,2,2,0,0,88
+'Ricard Artero ',0,0,0,0,0,0,0
+'Robert Navarro ',8,155,0,6,2,0,0,84
+'Roberto Torres ',2,11,0,0,0,0,1
+'Rodri Sánchez ',11,696,1,5,0,0,0,9
+'Rodrigo Battaglia ',11,590,0,2,5,0,0,83
+'Rodrigo De Paul ',12,670,1,8,2,0,0,84
+'Rodrigo Riquelme ',13,796,3,22,0,0,0,76
+'Roque Mesa ',12,863,2,14,4,0,0,84
+'Rubén Alcaraz ',10,513,0,9,5,1,0,8
+'Rubén García ',11,426,1,11,2,0,0,83
+'Salvi Sánchez ',10,262,0,2,2,0,0,6
+'Samu Castillejo ',10,612,2,19,4,0,0,87
+'Samuel Chukwueze ',13,538,0,14,1,0,0,76
+'Samuel Sáiz ',6,193,1,2,1,0,0,82
+'Samú Costa ',11,768,0,5,3,0,0,8
+'Santi Comesaña ',12,729,1,12,2,0,0,84
+'Saúl Ñíguez ',11,465,0,9,5,0,0,78
+'Sergi Darder ',14,1233,2,18,2,0,0,79
+'Sergio Busquets ',12,909,0,2,6,1,0,89
+'Sergio Canales ',11,866,1,7,4,1,0,81
+'Suso Fernández ',4,88,0,5,1,0,0,84
+'Takefusa Kubo ',12,842,2,21,0,0,0,78
+'Tecatito Corona ',1,62,0,0,0,0,0,88
+'Tete Morente ',11,718,0,11,3,0,0,85
+'Thomas Delaney ',8,309,0,3,3,0,0,88
+'Thomas Lemar ',9,390,0,1,0,0,0,9
+'Théo Bongonda ',9,446,1,7,0,0,0,79
+'Tomás Alarcón ',4,223,0,2,2,1,0,84
+'Toni Kroos ',11,859,1,12,2,1,0,94
+'Toni Villa ',12,380,0,8,1,0,0,8
+'Unai López ',13,553,1,13,0,0,0,86
+'Unai Vencedor ',6,141,0,3,2,0,0,91
+'Urko González de Zarate ',0,0,0,0,0,0,0
+'Uros Racic ',0,0,0,0,0,0,0
+'Vinicius Souza ',14,1188,0,4,4,0,0,82
+'William Carvalho ',13,926,2,12,3,0,0,87
+'Williot Swedberg ',1,34,0,0,1,0,0,92
+'Yangel Herrera ',11,629,0,14,1,0,0,81
+'Yannick F. Carrasco ',13,739,1,21,1,0,0,85
+'Yellu Santiago ',0,0,0,0,0,0,0
+'Yunus Musah ',11,846,0,8,5,0,0,83
+'Álex Alfaro ',1,15,0,0,0,0,1
+'Álex Baena ',13,630,4,18,6,1,0,78
+'Álex Berenguer ',13,1026,3,26,0,0,0,74
+'Álex Collado ',8,514,1,11,0,0,0,84
+'Álex Fernández ',12,699,2,9,0,0,0,88
+'Álvaro Aguado ',13,747,0,6,1,0,0,86
+'Álvaro García ',13,1096,3,18,2,0,0,73
+'Ángel Algobia ',8,362,0,2,2,0,0,83
+'Érik Lamela ',13,956,3,23,5,1,0,8
+'Étienne Capoue ',10,836,0,10,1,0,0,88
+'Íñigo Ruiz de Galarreta ',12,856,0,7,5,0,0,87
+'Óliver Torres ',12,850,3,7,1,0,0,8
+'Óscar Plano ',14,829,1,14,1,0,0,75
+'Óscar Rodríguez ',13,999,2,26,2,0,0,85
+
