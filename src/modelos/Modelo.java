@@ -13,9 +13,13 @@ import java.io.ObjectOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import weka.classifiers.Classifier;
+import weka.classifiers.bayes.NaiveBayes;
+import weka.classifiers.functions.MultilayerPerceptron;
 import weka.classifiers.trees.J48;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
+import weka.classifiers.AbstractClassifier;
+import weka.classifiers.functions.*;
 
 /**
  *
@@ -38,15 +42,15 @@ public class Modelo {
     public void aprenderModelo()
     {
         try {
-            // create J48
-            Classifier cls = new J48();
+            // create model
+            Classifier cls = new NaiveBayes();
 
             // train
-            Instances inst = leerInstancias("./training_data/iris.arff");
+            Instances inst = leerInstancias("./test_data/test.arff");
             cls.buildClassifier(inst);
 
             // serialize model
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./models/objetoJ48Iris.model"));
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./models/objetoNaiveBayes.model"));
             oos.writeObject(cls);
             oos.flush();
             oos.close();
@@ -59,7 +63,7 @@ public class Modelo {
     public String aplicarModelo() {
         try{
             String[] valoresAtributos = {"Iris-setosa", "Iris-versicolor", "Iris-virginica"};
-            Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/objetoJ48Iris.model");
+            Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/objetoNaiveBayes.model");
             Instances data = leerInstancias("./test_data/test.arff");
             return valoresAtributos[(int) clasificador.classifyInstance(data.instance(0))];
         }catch (Exception ex) {
