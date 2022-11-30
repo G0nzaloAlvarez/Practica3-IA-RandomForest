@@ -13,9 +13,11 @@ import java.io.ObjectOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import weka.classifiers.Classifier;
-import weka.classifiers.bayes.NaiveBayes;
-import weka.classifiers.functions.MultilayerPerceptron;
-import weka.classifiers.trees.J48;
+import weka.classifiers.bayes.NaiveBayes; //no hace falta en teoria
+import weka.classifiers.functions.MultilayerPerceptron; // no hace falta en teoria
+import weka.classifiers.trees.J48; //no hace falta en teoria
+import weka.classifiers.trees.RandomForest;
+import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ConverterUtils;
 import weka.classifiers.AbstractClassifier;
@@ -43,14 +45,14 @@ public class Modelo {
     {
         try {
             // create model
-            Classifier cls = new NaiveBayes();
+            Classifier cls = new RandomForest();
 
             // train
-            Instances inst = leerInstancias("./test_data/test.arff");
+            Instances inst = leerInstancias("./test_data/juegosdelhambre.arff");
             cls.buildClassifier(inst);
 
             // serialize model
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./models/objetoNaiveBayes.model"));
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("./models/juegosdelhambre.model"));
             oos.writeObject(cls);
             oos.flush();
             oos.close();
@@ -60,12 +62,11 @@ public class Modelo {
 
     }
 
-    public String aplicarModelo() {
+    public String aplicarModelo(int distrito, boolean sexo, int edad, int voluntario, int career, int rating, int dias_sobrevividos, int ganador) {
         try{
-            String[] valoresAtributos = {"Iris-setosa", "Iris-versicolor", "Iris-virginica"};
-            Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/objetoNaiveBayes.model");
-            Instances data = leerInstancias("./test_data/test.arff");
-            return valoresAtributos[(int) clasificador.classifyInstance(data.instance(0))];
+            Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/juegosdelhambre.model");
+            Instances data = leerInstancias("./test_data/juegosdelhambre.arff");
+            return valoresAtributos[(int) clasificador.classifyInstance(data.instance(0))]; //falla porque está incompleto
         }catch (Exception ex) {
             Logger.getLogger(Modelo.class.getName()).log(Level.SEVERE, null, ex);
             return "Error al intentar leer el modelo";
