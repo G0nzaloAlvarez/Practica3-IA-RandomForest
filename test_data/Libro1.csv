@@ -1,19 +1,4 @@
-@RELATION test 
-
-@ATTRIBUTE Nombre String 
-@ATTRIBUTE Partidos numeric
-@ATTRIBUTE Minutos_jugados numeric
-@ATTRIBUTE Goles numeric
-@ATTRIBUTE Tiros numeric	
-@ATTRIBUTE Amarillas numeric	
-@ATTRIBUTE Rojas numeric	
-@ATTRIBUTE Precision_Pases numeric
-@ATTRIBUTE class {nivel-alto,nivel-medio,nivel-bajo}
-
-
-
-@DATA
-
+﻿Nombre,Partidos,Minutos_Jugados,Goles,Tiros,Amarillas,Rojas,Precision_Pases2,Tipo
 'Abde Ezzalzouli ',8,313,0,10,1,0,7,nivel-alto
 'Abdon Prats ',10,136,0,5,0,0,76,nivel-bajo
 'Alexander Isak ',2,152,1,3,0,0,64,nivel-alto
@@ -88,10 +73,10 @@
 'Radamel Falcao ',12,404,2,13,2,0,73,nivel-alto
 'Rafa Mir ',9,559,2,25,1,0,72,nivel-alto
 'Raphinha ',13,571,2,26,1,0,8,nivel-alto
-'Raúl García ',13,355,1,23,1,0,67,nivel-medio
+'Raúl García ',13,355,1,23,1,0,67,nivrl-medio
 'Robert Lewandowski ',14,1064,13,51,2,0,8,nivel-alto
 'Rodrygo Goes ',12,912,4,40,1,0,88,nivel-alto
-'Roger Martí ',8,430,0,4,1,0,76,nivel-medio
+'Roger Martí ',8,430,0,4,1,0,76,nivrl-medio
 'Rubén Sobrino ',11,799,1,13,3,0,77,nivel-bajo
 'Samuel Lino ',14,1215,2,38,3,0,83,nivel-bajo
 'Sergi Guardiola ',11,377,0,10,0,0,64,nivel-bajo
@@ -110,20 +95,20 @@
 'Ángel Correa ',14,513,3,20,1,0,84,nivel-alto
 'Ángel Rodríguez ',5,149,0,6,0,0,7,nivel-medio
 'Óscar Ureña ',3,100,0,1,0,0,83,nivel-medio
-'Alvaro Rodríguez ',0,0,0,0,0,0,0,nivel-medio
-'Luis Bilbao ',0,0,0,0,0,0,0,nivel-medio
+'Alvaro Rodríguez ',0,0,0,0,0,0,,nivel-medio
+'Luis Bilbao ',0,0,0,0,0,0,,nivel-medio
 'Pablo Durán ',3,29,0,0,0,0,71,nivel-medio
 'Sekou Gassama ',1,36,0,2,0,0,78,nivel-medio
-' Diego Méndez ',0,0,0,0,0,0,0,nivel-medio
+' Diego Méndez ',0,0,0,0,0,0,,nivel-medio
 'Adnan Januzaj ',2,47,0,0,0,0,68,nivel-medio
 'Adrián Embarba ',10,458,1,13,4,0,74,nivel-medio
 'Aimar Oroz ',12,775,2,9,3,0,8,nivel-medio
 'Aitor Ruibal ',13,563,0,7,1,0,78,nivel-medio
-'Alberto Moreno ',0,0,0,0,0,0,0,nivel-alto
+'Alberto Moreno ',0,0,0,0,0,0,,nivel-alto
 'Aleix García ',14,1246,0,21,1,0,9,nivel-medio
 'Ander Guevara ',4,126,0,1,1,0,91,nivel-medio
 'Ander Herrera ',6,239,0,3,2,0,92,nivel-medio
-'Ander Martín ',0,0,0,0,0,0,0,nivel-bajo
+'Ander Martín ',0,0,0,0,0,0,,nivel-bajo
 'André Almeida ',11,706,2,8,0,0,86,nivel-bajo
 'Andrés Guardado ',8,303,0,1,2,0,83,nivel-bajo
 'Antonio Blanco ',3,158,0,0,0,0,93,nivel-bajo
@@ -138,26 +123,26 @@
 'Brais Méndez ',14,1121,6,30,4,0,84,nivel-alto
 'Brian Ocampo ',10,561,0,5,1,0,77,nivel-alto
 'Carles Aleñá ',13,1026,2,13,6,0,81,nivel-bajo
-'Carlo Adriano ',0,0,0,0,0,0,0,nivel-bajo
+'Carlo Adriano ',0,0,0,0,0,0,,nivel-bajo
 'Carlos Casemiro ',1,8,0,0,0,0,88,nivel-alto
-'Carlos Rojas ',0,0,0,0,0,0,0,nivel-bajo
+'Carlos Rojas ',0,0,0,0,0,0,,nivel-bajo
 'Carlos Soler ',3,242,1,5,0,0,84,nivel-bajo
 'Clément Grenier ',10,402,0,2,6,0,81,nivel-bajo
 'Cristian Portu ',11,391,0,6,2,0,79,nivel-bajo
-'Curro Muñoz ',0,0,0,0,0,0,0,nivel-bajo
+'Curro Muñoz ',0,0,0,0,0,0,,nivel-bajo
 'Curro Sánchez ',2,43,0,1,1,0,77,nivel-bajo
 'César de la Hoz ',8,583,1,3,4,0,83,nivel-bajo
 'Dani Ceballos ',8,178,0,3,1,0,93,nivel-alto
 'Dani García ',8,364,0,1,1,0,82,nivel-bajo
 'Dani Parejo ',14,1227,0,11,2,0,89,nivel-alto
 'Dani Rodríguez ',13,685,0,7,5,0,82,nivel-bajo
-'Daniel Villahermosa ',0,0,0,0,0,0,0,nivel-bajo
+'Daniel Villahermosa ',0,0,0,0,0,0,,nivel-bajo
 'Darko Brasanac ',12,484,1,5,3,0,83,nivel-bajo
 'David Silva ',12,816,0,12,2,0,86,nivel-bajo
 'Domingos Quina ',9,268,0,5,1,0,84,nivel-bajo
 'Edu Expósito ',13,772,2,11,0,0,77,nivel-bajo
 'Eduardo Camavinga ',14,511,0,8,1,0,91,nivel-alto
-'Etta Eyong ',0,0,0,0,0,0,0,nivel-medio
+'Etta Eyong ',0,0,0,0,0,0,,nivel-medio
 'Fede San Emeterio ',13,790,0,3,4,0,82,nivel-medio
 'Federico Valverde ',14,1108,6,31,1,0,9,nivel-medio
 'Fernando Reges ',6,495,0,0,2,0,89,nivel-medio
@@ -175,10 +160,10 @@
 'Giovani Lo Celso ',8,521,1,13,1,0,85,nivel-alto
 'Gonzalo Melero ',8,536,1,6,2,0,89,nivel-alto
 'Guido Rodríguez ',12,1043,0,8,2,0,89,nivel-bajo
-'Guilherme Guedes ',0,0,0,0,0,0,0,nivel-bajo
+'Guilherme Guedes ',0,0,0,0,0,0,,nivel-bajo
 'Hugo Guillamón ',13,916,1,3,4,0,85,nivel-alto
 'Iddrisu Baba ',11,549,0,1,2,0,85,nivel-bajo
-'Iker Benito ',0,0,0,0,0,0,0,nivel-bajo
+'Iker Benito ',0,0,0,0,0,0,,nivel-bajo
 'Iker Muniain ',11,788,0,18,1,0,88,nivel-alto
 'Ilaix Moriba ',6,331,0,8,3,0,83,nivel-bajo
 'Isco Alarcón ',12,799,0,4,5,0,87,nivel-alto
@@ -189,28 +174,28 @@
 'Iván Sánchez ',11,555,0,9,0,0,84,nivel-medio
 'Iñigo Eguaras ',11,495,1,4,2,0,85,nivel-medio
 'Jaime Seoane ',9,269,0,1,0,0,81,nivel-medio
-'Javi Llabrés ',1,17,0,0,0,1,0,nivel-medio
-'Javi Martínez ',0,0,0,0,0,0,0,nivel-medio
+'Javi Llabrés ',1,17,0,0,0,1,,nivel-medio
+'Javi Martínez ',0,0,0,0,0,0,,nivel-medio
 'Javier Pastore ',1,5,0,0,0,0,86,nivel-medio
 'Joan Jordan ',10,684,0,5,2,0,86,nivel-medio
 'Joaquín Sánchez ',5,160,0,3,0,0,89,nivel-bajo
 'Joel Roca ',2,12,0,0,0,0,64,nivel-bajo
-'John Patrick Finn ',0,0,0,0,0,0,0,nivel-bajo
-'Jon Ander Olasagasti ',0,0,0,0,0,0,0,nivel-bajo
+'John Patrick Finn ',0,0,0,0,0,0,,nivel-bajo
+'Jon Ander Olasagasti ',0,0,0,0,0,0,,nivel-bajo
 'Jon Moncayola ',14,875,0,17,2,0,85,nivel-alto
 'Jon Morcillo ',8,53,0,0,0,0,84,nivel-bajo
 'Josan Ferrández ',12,392,1,2,3,0,81,nivel-bajo
-'José Alonso Lara ',0,0,0,0,0,0,0,nivel-bajo
+'José Alonso Lara ',0,0,0,0,0,0,,nivel-bajo
 'José Carlos Lazo ',8,137,1,6,0,0,79,nivel-bajo
 'José Mari ',10,286,0,2,1,0,81,nivel-medio
 'José Ángel Pozo ',6,75,0,1,0,0,81,nivel-medio
 'Juanjo Narváez ',5,147,0,3,0,0,74,nivel-medio
 'Kang-In Lee ',14,1094,2,20,4,0,83,nivel-alto
 'Keidi Bare ',11,330,0,4,0,0,85,nivel-bajo
-'Kenedy ',1,15,0,1,0,1,0,nivel-bajo
+'Kenedy ',1,15,0,1,0,1,,nivel-bajo
 'Kike Barja ',7,286,1,2,0,0,83,nivel-medio
 'Kike Pérez ',13,966,0,17,2,0,8,nivel-medio
-'Koba Koindredi ',0,0,0,0,0,0,0,nivel-medio
+'Koba Koindredi ',0,0,0,0,0,0,,nivel-medio
 'Koke Resurrección ',10,742,0,3,2,0,85,nivel-medio
 'Lago Júnior ',5,52,0,2,0,0,76,nivel-medio
 'Luca de la Torre ',5,54,0,0,0,0,93,nivel-medio
@@ -225,15 +210,15 @@
 'Manuel Morlanes ',3,145,0,0,0,0,78,nivel-bajo
 'Marcos Llorente ',8,662,1,8,1,0,86,nivel-alto
 'Mario Suárez ',1,6,0,0,0,0,67,nivel-alto
-'Martin Svidersky ',0,0,0,0,0,0,0,nivel-bajo
+'Martin Svidersky ',0,0,0,0,0,0,,nivel-bajo
 'Martín Zubimendi ',14,1151,1,5,4,0,85,nivel-medio
 'Mauro Arambarri ',6,516,0,5,2,0,91,nivel-medio
 'Mickaël Malsa ',4,39,0,0,0,0,5,nivel-bajo
-'Miguel Baeza ',0,0,0,0,0,0,0,nivel-bajo
-'Miguel Llabrés ',0,0,0,0,0,0,0,nivel-medio
+'Miguel Baeza ',0,0,0,0,0,0,,nivel-bajo
+'Miguel Llabrés ',0,0,0,0,0,0,,nivel-medio
 'Mikel Merino ',14,1124,1,24,5,0,77,nivel-bajo
 'Mikel Vesga ',13,925,2,12,2,0,82,nivel-bajo
-'Miralem Pjanic ',0,0,0,0,0,0,0,nivel-medio
+'Miralem Pjanic ',0,0,0,0,0,0,,nivel-medio
 'Moi Gómez ',14,1139,1,11,2,0,87,nivel-medio
 'Monchu Rodríguez ',12,659,1,9,4,0,82,nivel-medio
 'Nemanja Gudelj ',12,1035,2,17,4,0,92,nivel-bajo
@@ -247,7 +232,7 @@
 'Oriol Romeu ',11,990,1,11,4,0,88,nivel-bajo
 'Pablo Gavi ',14,803,0,5,2,0,92,nivel-alto
 'Pablo Ibáñez ',4,35,0,2,0,0,72,nivel-bajo
-'Pablo Muñoz ',2,11,0,0,0,1,0,nivel-bajo
+'Pablo Muñoz ',2,11,0,0,0,1,,nivel-bajo
 'Pablo Torre ',1,14,0,0,0,0,67,nivel-bajo
 'Papu Gómez ',12,655,0,15,4,0,91,nivel-alto
 'Pathé Ciss ',13,643,1,10,3,0,86,nivel-bajo
@@ -259,9 +244,9 @@
 'Raúl Guti ',11,618,0,5,1,0,86,nivel-bajo
 'Reinier Jesus ',7,313,1,4,1,0,81,nivel-bajo
 'Renato Tapia ',11,638,0,2,2,0,88,nivel-alto
-'Ricard Artero ',0,0,0,0,0,0,0,nivel-bajo
+'Ricard Artero ',0,0,0,0,0,0,,nivel-bajo
 'Robert Navarro ',8,155,0,6,2,0,84,nivel-bajo
-'Roberto Torres ',2,11,0,0,0,1,0,nivel-bajo
+'Roberto Torres ',2,11,0,0,0,1,,nivel-bajo
 'Rodri Sánchez ',11,696,1,5,0,0,9,nivel-medio
 'Rodrigo Battaglia ',11,590,0,2,5,0,83,nivel-medio
 'Rodrigo De Paul ',12,670,1,8,2,0,84,nivel-medio
@@ -291,16 +276,16 @@
 'Toni Villa ',12,380,0,8,1,0,8,nivel-bajo
 'Unai López ',13,553,1,13,0,0,86,nivel-medio
 'Unai Vencedor ',6,141,0,3,2,0,91,nivel-medio
-'Urko González de Zarate ',0,0,0,0,0,0,0,nivel-medio
-'Uros Racic ',0,0,0,0,0,0,0,nivel-medio
+'Urko González de Zarate ',0,0,0,0,0,0,,nivel-medio
+'Uros Racic ',0,0,0,0,0,0,,nivel-medio
 'Vinicius Souza ',14,1188,0,4,4,0,82,nivel-bajo
 'William Carvalho ',13,926,2,12,3,0,87,nivel-alto
 'Williot Swedberg ',1,34,0,0,1,0,92,nivel-bajo
 'Yangel Herrera ',11,629,0,14,1,0,81,nivel-bajo
 'Yannick F. Carrasco ',13,739,1,21,1,0,85,nivel-alto
-'Yellu Santiago ',0,0,0,0,0,0,0,nivel-bajo
+'Yellu Santiago ',0,0,0,0,0,0,,nivel-bajo
 'Yunus Musah ',11,846,0,8,5,0,83,nivel-alto
-'Álex Alfaro ',1,15,0,0,0,1,0,nivel-bajo
+'Álex Alfaro ',1,15,0,0,0,1,,nivel-bajo
 'Álex Baena ',13,630,4,18,6,0,78,nivel-bajo
 'Álex Berenguer ',13,1026,3,26,0,0,74,nivel-alto
 'Álex Collado ',8,514,1,11,0,0,84,nivel-bajo
