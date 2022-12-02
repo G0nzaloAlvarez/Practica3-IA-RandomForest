@@ -48,7 +48,7 @@ public class Modelo {
             Classifier cls = new RandomForest();
 
             // train
-            Instances inst = leerInstancias("./test_data/juegosdelhambre.arff");
+            Instances inst = leerInstancias("./training_data/juegosdelhambre.arff");
             cls.buildClassifier(inst);
 
             // serialize model
@@ -61,9 +61,12 @@ public class Modelo {
         }
 
     }
-
-    public String aplicarModelo(int distrito, boolean sexo, int edad, int voluntario, int career, int rating, int dias_sobrevividos, int ganador) {
+// int distrito, boolean sexo, int edad, int voluntario, int career, int rating, int dias_sobrevividos, int ganador
+    public String aplicarModelo() {
         try{
+            String[] valoresAtributos = {
+                "0","1"
+            };
             Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/juegosdelhambre.model");
             Instances data = leerInstancias("./test_data/juegosdelhambre.arff");
             return valoresAtributos[(int) clasificador.classifyInstance(data.instance(0))]; //falla porque está incompleto
