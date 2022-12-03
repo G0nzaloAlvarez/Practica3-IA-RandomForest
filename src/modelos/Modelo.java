@@ -13,9 +13,6 @@ import java.io.ObjectOutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import weka.classifiers.Classifier;
-import weka.classifiers.bayes.NaiveBayes; //no hace falta en teoria
-import weka.classifiers.functions.MultilayerPerceptron; // no hace falta en teoria
-import weka.classifiers.trees.J48; //no hace falta en teoria
 import weka.classifiers.trees.RandomForest;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
@@ -25,7 +22,7 @@ import weka.classifiers.functions.*;
 
 /**
  *
- * @author mariano
+ * @author Mariano, Gonzalo Álvarez y Pablo Muñoz.
  */
 public class Modelo {
 
@@ -68,7 +65,7 @@ public class Modelo {
                 "0","1"
             };
             Classifier clasificador  = (Classifier) weka.core.SerializationHelper.read("./models/juegosdelhambre.model");
-            Instances data = leerInstancias("./test_data/juegosdelhambre.arff");
+            Instances data = leerInstancias("./test_data/consulta.arff");
             return valoresAtributos[(int) clasificador.classifyInstance(data.instance(0))]; //falla porque está incompleto
         }catch (Exception ex) {
             Logger.getLogger(Modelo.class.getName()).log(Level.SEVERE, null, ex);

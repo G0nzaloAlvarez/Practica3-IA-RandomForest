@@ -75,8 +75,62 @@ Para analizar y predecir los resultados hemos considerado relevantes los siguien
 
 ### **5. Evaluar distintos algoritmos de aprendizaje automatico con con los datos obtenidos**
 
-´´´
-Una vez obtenido el fichero `.arff`, 
-´´´
+
+Una vez obtenido el fichero `.arff`, Buscamos el modelo que mejor clasifique nuestros datos para ello nos vamos a fijar en el AUC, que es el area bajo la curva ROC. Además también en la Medida F ya que tiene en cuenta la precisión y la recuperacion también.
+
+
+| Algoritmo            | AUC	  | F-Measure |
+|:---------------------|:--------:|:---------:|
+| Random Forest        | 97,1%    | 0,994     |
+| J48                  | 90,8%    | 0,995     | 
+| Tabla de Decisión    | 91%      | 0,995     |
+| Voted Perceptron     | 71,9%    | 0,97      |
+| Naive Bayes          | 96%      | 0,97      |
+| BayesNet             | 97,6%    | 0,995     |
+
+Obsermaos que el algoritmos que mejor clasifica nuestros datos es Random Forest
+
 ### **6.Generar en Java un objeto persistente con el algoritmo obtenido en el paso 5.**
-### **7. Implementar un prototipo de aplicación que consulte el objeto persistente generado en el paso 6.**
+
+Para el objeto persistente usamos el modelo obtenido de Weka. Para ejecutar este framework usamos la clase de Modelo.java ubicada en src/Modelos/Modelo.java. En esta clase encontramos el método aplicarModelo() donde recoge la informacion del modelo junto con la de los datos ubicados en training_data para encpntrar la solucción a laconsulta propuesta en el el fichero .arff de test_data
+
+
+
+
+
+### **7. Implementar un prototipo de aplicación que consulte el objeto persistente generado en el paso 6.**  
+  
+    
+
+
+  
+  *Para llevar a cabo la comprobacion de los resultados de aprendizaje realizamos los siguientes pasos:*
+
+1. Clonar el repositorio 
+    
+    ```
+     git clone https://github.com/G0nzaloAlvarez/Practica3-IA-RandomForest.git
+    
+    ```
+2. Seleccionar la consulta que quieres realizar **
+
+```
+Modificamos la clase consulta.arff en el directorio /test_data y cambiamos los parametros para ver si somos ganadores 
+
+Ejemplo : 1,1,19,1,2,20,? 
+Tiene que devolver un 1 ya que cuenta con los parametros mas favorable para salir ganador (Mejor distrito, hombre, edad, es voluntario, ranking 2 y ha sobrevivido muchos dias)
+```
+
+3. . Generar el fichero jar una vez tenemos la consulta hecha y guardada. Ejecutamos el siguiente comando en la raiz del repositorio
+
+```
+$ make jar
+```	
+
+4. Ejecutar el archivo jar generado "aprendizaje.jar" y comprobamos si nuestro superviviente logra ganar los juego del hambre.
+
+```
+$ java -jar target/aplicacion.jar
+```
+
+
