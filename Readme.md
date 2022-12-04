@@ -15,14 +15,11 @@ Factores a tener en cuenta para entender quienes son los maspropensos a ganar:
 
  1. Los distritos mas pequeños (1,2,3...) son los mas "deportistas" y mas adinerados para entrenar y por lo tanto, con más probabilida de ganar.
  
- 2. Cada distrito lleva a 2 personas, de ahí que puedan ganar los 2 del mismo distrito. No pueden ganar
-    2 personas de distritos diferentes. Puede haber un único ganador.
+ 2. Cada distrito lleva a 2 personas, de ahí que puedan ganar los 2 del mismo distrito. No pueden ganar 2 personas de distritos diferentes. Puede haber un único ganador.
  
  3. Te puedes presentar voluntario a participar (suele ser persnas que se llevan entrenando toda la vida).
 
  4. Los distritos altos (11,12,13) son los peores, son los mas pobres y pocas veces ganan.
-
- 5. 
 
  6. La edad suele ser entre 10 y 20 de los participantes, los mas mayores tienen mas probabilidades de ganar.
 
@@ -58,7 +55,7 @@ Para analizar y predecir los resultados hemos considerado relevantes los siguien
     - edad: indica la edad del paciente
     - voluntario: Si(1), No(0).
     - rating: indica la valoración del participante
-    - dias sobrevividos: indica el número de dias que ha sobrevivido cada uno de los participantes de la       pareja.
+    - dias sobrevividos: indica el número de dias que ha sobrevivido cada uno de los participantes de la pareja.
     - ganador: indica cuál fue la pareja ganadora de cada una de las partidas.
 
 ### **4. Obtener el fichero .arff con los hechos codificados de acuedos con las caracterisiticas anteriores**
@@ -94,10 +91,6 @@ Obsermaos que el algoritmos que mejor clasifica nuestros datos es Random Forest
 
 Para el objeto persistente usamos el modelo obtenido de Weka. Para ejecutar este framework usamos la clase de Modelo.java ubicada en src/Modelos/Modelo.java. En esta clase encontramos el método aplicarModelo() donde recoge la informacion del modelo junto con la de los datos ubicados en training_data para encpntrar la solucción a laconsulta propuesta en el el fichero .arff de test_data
 
-
-
-
-
 ### **7. Implementar un prototipo de aplicación que consulte el objeto persistente generado en el paso 6.**  
   
     
@@ -121,7 +114,7 @@ Ejemplo : 1,1,19,1,2,20,?
 Tiene que devolver un 1 ya que cuenta con los parametros mas favorable para salir ganador (Mejor distrito, hombre, edad, es voluntario, ranking 2 y ha sobrevivido muchos dias)
 ```
 
-3. . Generar el fichero jar una vez tenemos la consulta hecha y guardada. Ejecutamos el siguiente comando en la raiz del repositorio
+3. Generar el fichero jar una vez tenemos la consulta hecha y guardada. Ejecutamos el siguiente comando en la raiz del repositorio
 
 ```
 $ make jar
