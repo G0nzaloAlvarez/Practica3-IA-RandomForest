@@ -123,7 +123,7 @@ $ make jar
 4. Ejecutar el archivo jar generado "aprendizaje.jar" y comprobamos si nuestro superviviente logra ganar los juego del hambre.
 
 ```
-$ java -jar target/aplicacion.jar
+$ java -jar aprendizaje.jar
 ```
 
 
